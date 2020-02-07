@@ -1,12 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: beige;
 }
 
 header {
   height: 106px;
   width: 100%;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 100%;
+  }
 }
 
 .black-header {
@@ -26,7 +36,7 @@ header {
 
 .section-link {
   display: inline-block;
-  background-color: red;
+  background-color: aliceblue;
   width: 60px;
   height: 20px;
   margin-right: 20px;
@@ -38,7 +48,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
   .logo {
     display: none;
   }
@@ -58,7 +68,7 @@ header {
 }
 
 .cover-header {
-  border: 2px solid red;
+  border: 2px solid grey;
 }
 
 .latest-news {
@@ -66,10 +76,25 @@ header {
   height: 50vh;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
+  background-color: aliceblue;
 }
 
 .latest-cell {
-  border: 2px solid yellow;
+  border: 2px solid grey;
+}
+
+@media screen and (max-width: 1000px) {
+  .latest-news {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .latest-news {
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -94,11 +119,6 @@ header {
   .double-height {
     grid-row: 1 / 2;
   }
-
-  .latest-news {
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: 1fr;
-  }
 }
 
 .funding-rounds {
@@ -108,28 +128,11 @@ header {
 }
 
 .funding-rounds-cell {
-  border: 2px solid salmon;
+  background-color: aliceblue;
+  border: 2px solid grey;
 }
 
 @media screen and (max-width: 1000px) {
-  .logo {
-    height: 100%;
-    width: 80px;
-    background-color: brown;
-    float: left;
-    display: inline-block;
-  }
-
-  .white-header,
-  .black-header {
-    width: calc(100% - 80px);
-  }
-
-  .latest-news {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .funding-rounds {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -139,8 +142,29 @@ header {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .funding-rounds {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    height: 100%;
+    width: 80px;
+    background-color: grey;
+    float: left;
+  }
+
+  .white-header,
+  .black-header {
+    width: calc(100% - 80px);
+  }
+}
+
 .most-popular {
-  background-color: cyan;
+  background-color: aliceblue;
   height: 2000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -148,7 +172,7 @@ header {
 }
 
 .most-popular-cell {
-  border: 2px solid green;
+  border: 2px solid grey;
 }
 
 @media screen and (max-width: 1000px) {
@@ -156,9 +180,54 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-} 
+}
 
+@media screen and (max-width: 800px) {
+  .most-popular {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: yellow;
+  }
+}
 
+footer {
+  background-color: black;
+  height: 250px;
+}
 
+footer > .social {
+  background-color: #131313;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.contact-container > a {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background-color: aliceblue;
+}
 
+footer > .social > .social-buttons-container > a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #333;
+  z-index: 1;
+}
+
+footer > .social > .social-buttons-container {
+  display: inline-block;
+}
+
+footer > .credits {
+  background-color: black;
+  height: 30%;
+}
+
+.contact-container {
+  display: inline-block;
+}
