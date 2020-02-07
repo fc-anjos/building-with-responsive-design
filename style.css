@@ -12,13 +12,16 @@ header {
 .black-header {
   height: 60%;
   background-color: black;
+  width: 90%;
+  display: inline-block;
 }
 
 .white-header {
   height: 70%;
   background-color: white;
-  display: flex;
+  display: inline-block;
   align-items: center;
+  width: 90%;
 }
 
 .section-link {
@@ -33,4 +36,24 @@ header {
   .media1200 {
     display: none;
   }
+
 }
+
+@media screen and (min-width: 1000px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    height: 96px;
+    width: 60px;
+    background-color: brown;
+    float: left;
+    display: inline-block;
+}
+}
+
+
+
