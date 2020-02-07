@@ -138,3 +138,27 @@ header {
     display: none;
   }
 }
+
+.most-popular {
+  background-color: cyan;
+  height: 2000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.most-popular-cell {
+  border: 2px solid green;
+}
+
+@media screen and (max-width: 1000px) {
+  .most-popular {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+} 
+
+
+
+
+
