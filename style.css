@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+}
+
+.black-header {
+  height: 60%;
+  background-color: black;
+}
+
+.white-header {
+  height: 70%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.section-link {
+  display: inline-block;
+  background-color: aliceblue;
+  width: 90px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .media1200 {
+    display: none;
+  }
+}
