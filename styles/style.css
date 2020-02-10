@@ -80,11 +80,60 @@ main {
 .big-news {
   display: grid;
   height: 60vh;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   margin: 5px;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
+
+#cover-1 {
+  background: url(../resources/cover-1.png);
+  background-size: 100% 100%;
+}
+
+.top-part {
+  height: 20%;
+  border: 2px solid blue;
+  background: url(../resources/tnw.svg);
+  background-repeat: no-repeat;
+}
+
+.top-part span {
+  color: white;
+  float: right;
+  font-size: 0.9rem;
+
+}
+
+.bottom-part {
+  border: 2px solid red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-part > span {
+  color: white;
+  font-size: 3.7rem;
+  position: relative;
+}
+
+.bottom-part .writer {
+  font-size: 1rem;
+}
+
+#cover-2 {
+  background: url(../resources/cover-2.jpg);
+  background-size: 100% 100%;
+}
+
+
+#cover-3 {
+  background: url(../resources/cover-3.jpg);
+  background-size: 100% 100%;
+}
+
+
 
 .double-height {
   grid-row: 1 / 3;
@@ -92,6 +141,7 @@ main {
 
 .cover-header {
   border: 2px solid grey;
+  position: relative;
 }
 
 .latest-news {
