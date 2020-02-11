@@ -269,13 +269,14 @@ main {
 }
 
 .funding-rounds-cell > .top {
-  height: 30%;
   display: block;
 }
 
 .funding-rounds-cell .top-top {
   background-color: #f42;
-  height: 50%;
+  height: 30%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .funding-rounds-cell a {
@@ -290,13 +291,12 @@ main {
 
 .funding-rounds-cell .top-top > p {
   color: white;
-  top: 15px;
-  position: relative;
 }
 
 .funding-rounds-cell .top-bottom > p {
   color: black;
   font-size: 0.7rem;
+  font-weight: bold;
 }
 
 .funding-rounds-cell .top-bottom > .value {
@@ -311,17 +311,22 @@ main {
 
 .funding-rounds-cell .top-bottom {
   background-color: #ffebe7;
-  height: 50%;
+  height: 70%;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .funding-rounds-cell > .middle {
   background-color: #fffaf8;
-  height: 30%;
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid rgb(86, 86, 86);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+
 }
 
 .funding-rounds-cell > .middle > a {
@@ -330,6 +335,7 @@ main {
   height: 30%;
   color: rgb(80, 80, 80);
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .funding-rounds-cell > .middle > a:hover {
@@ -341,10 +347,13 @@ main {
   height: 30%;
   padding: 15px;
   box-sizing: border-box;
+  font-size: 0.8rem;
+
 }
 
 .funding-rounds-cell > .bottom > .news {
   color: rgb(80, 80, 80);
+  line-height: 2rem;
 }
 
 .funding-rounds-cell > .bottom > .origin {
@@ -354,7 +363,7 @@ main {
 .funding-rounds-cell > .logo-funding-cell {
   width: 75px;
   height: 75px;
-  background-color: green;
+  background-color: #f42;
   position: absolute;
   margin: 8px;
 }
@@ -432,14 +441,10 @@ main {
 }
 
 .funding-rounds {
-  height: 313px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-}
-
-.funding-rounds-cell {
-  background-color: aliceblue;
-  border: 2px solid grey;
+  position: relative;
+  grid-gap: 20px;
 }
 
 @media screen and (max-width: 1000px) {
