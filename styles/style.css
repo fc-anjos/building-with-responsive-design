@@ -55,10 +55,6 @@ main {
   text-decoration: none;
 }
 
-.white-header a:hover {
-  color: black;
-}
-
 .section-link {
   display: inline-block;
   height: 20px;
@@ -84,24 +80,6 @@ main {
   grid-template-columns: 2fr 1fr;
   padding: 5px;
   grid-gap: 5px;
-}
-
-#cover-1 {
-  background: url(../resources/cover-1.png);
-  background-size: cover;
-  background-position: 50%;
-}
-
-#cover-2 {
-  background: url(../resources/cover-2.jpg);
-  background-size: cover;
-  background-position: 50%;
-}
-
-#cover-3 {
-  background: url(../resources/cover-3.jpg);
-  background-size: cover;
-  background-position: 50%;
 }
 
 .cover {
@@ -257,6 +235,10 @@ main {
   margin: 20px 0 20px 0;
 }
 
+.funding-rounds-cell a {
+  text-decoration: none;
+}
+
 .section-open > div > a {
   color: #f42;
   border-right: 2px solid #f42;
@@ -278,10 +260,6 @@ main {
   height: 30%;
   padding-bottom: 10px;
   padding-top: 10px;
-}
-
-.funding-rounds-cell a {
-  text-decoration: none;
 }
 
 .funding-rounds-cell .top-top > p,
@@ -337,10 +315,6 @@ main {
   color: rgb(80, 80, 80);
   text-decoration: none;
   margin-top: 10px;
-}
-
-.funding-rounds-cell > .middle > a:hover {
-  color: black;
 }
 
 .funding-rounds-cell > .bottom {
@@ -625,11 +599,15 @@ footer > .social {
   flex-direction: column;
 }
 
-.contact-container > a {
+.contact-container > .contact-link {
   display: inline-block;
   width: 100px;
   height: 20px;
   background-color: aliceblue;
+}
+
+.white-header a:hover {
+  color: black;
 }
 
 footer > .social > .social-buttons-container > a {
@@ -652,5 +630,29 @@ footer > .credits {
 .contact-container {
   display: inline-block;
 }
+
+/* HOVERS */
+
+.funding-rounds-cell > .middle > a:hover {
+  color: black;
 }
+
+/* IDS */
+
+#cover-1 {
+  background: url(../resources/cover-1.png);
+  background-size: cover;
+  background-position: 50%;
+}
+
+#cover-2 {
+  background: url(../resources/cover-2.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+#cover-3 {
+  background: url(../resources/cover-3.jpg);
+  background-size: cover;
+  background-position: 50%;
 }
