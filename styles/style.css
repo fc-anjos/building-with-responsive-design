@@ -202,15 +202,12 @@ main {
   z-index: 4;
 }
 
-.latest-news-main {
-  font-size: 2rem;
-}
-
 .section-header {
   margin: 0;
   padding: 0;
   color: orange;
   font-size: 1.8rem;
+  display: inline-block;
 }
 
 .latest-news {
@@ -253,6 +250,115 @@ main {
   height: auto;
 }
 
+.section-open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-open > div > a {
+  color: orange;
+  border-right: 2px solid orange;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.section-open > div > .last {
+  border-right: none;
+}
+
+.funding-rounds-cell > .top {
+  height: 30%;
+  display: block;
+}
+
+.funding-rounds-cell .top-top {
+  background-color: #f42;
+  height: 50%;
+}
+
+.funding-rounds-cell a {
+  text-decoration: none;
+}
+
+.funding-rounds-cell .top-top > p,
+.funding-rounds-cell .top-bottom p {
+  margin: 0;
+  margin-left: 90px;
+}
+
+.funding-rounds-cell .top-top > p {
+  color: white;
+  top: 15px;
+  position: relative;
+}
+
+.funding-rounds-cell .top-bottom > p {
+  color: black;
+  font-size: 0.7rem;
+}
+
+.funding-rounds-cell .top-bottom > .value {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.funding-rounds-cell .top-bottom > .description {
+  color: grey;
+  font-size: 0.7rem;
+}
+
+.funding-rounds-cell .top-bottom {
+  background-color: #ffebe7;
+  height: 50%;
+}
+
+.funding-rounds-cell > .middle {
+  background-color: #fffaf8;
+  height: 30%;
+  border-bottom: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.funding-rounds-cell > .middle > a {
+  width: 100%;
+  display: inline-block;
+  height: 30%;
+  color: rgb(80, 80, 80);
+  text-decoration: none;
+}
+
+.funding-rounds-cell > .middle > a:hover {
+  color: black;
+}
+
+.funding-rounds-cell > .bottom {
+  background-color: #fffaf8;
+  height: 30%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.funding-rounds-cell > .bottom > .news {
+  color: rgb(80, 80, 80);
+}
+
+.funding-rounds-cell > .bottom > .origin {
+  color: rgb(120, 120, 120);
+}
+
+.funding-rounds-cell > .logo-funding-cell {
+  width: 75px;
+  height: 75px;
+  background-color: green;
+  position: absolute;
+  margin: 8px;
+}
+
 #news-2 {
   border: 2px solid red;
   box-sizing: border-box;
@@ -277,7 +383,7 @@ main {
     display: inline-block;
   }
 
-  .latest-cell >.image-container > img {
+  .latest-cell > .image-container > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
