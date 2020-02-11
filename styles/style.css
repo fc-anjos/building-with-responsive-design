@@ -205,7 +205,7 @@ main {
 .section-header {
   margin: 0;
   padding: 0;
-  color: orange;
+  color: #f42;
   font-size: 1.8rem;
   display: inline-block;
 }
@@ -254,11 +254,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 0 20px 0;
 }
 
 .section-open > div > a {
-  color: orange;
-  border-right: 2px solid orange;
+  color: #f42;
+  border-right: 2px solid #f42;
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
@@ -291,6 +292,7 @@ main {
 
 .funding-rounds-cell .top-top > p {
   color: white;
+  font-weight: 600;
 }
 
 .funding-rounds-cell .top-bottom > p {
@@ -318,15 +320,14 @@ main {
 
 .funding-rounds-cell > .middle {
   background-color: #fffaf8;
-  border-bottom: 2px solid rgb(86, 86, 86);
+  border-bottom: 1px solid rgba(255, 68, 34, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 30px;
   font-size: 0.9rem;
   padding-bottom: 20px;
-
 }
 
 .funding-rounds-cell > .middle > a {
@@ -344,20 +345,26 @@ main {
 
 .funding-rounds-cell > .bottom {
   background-color: #fffaf8;
-  height: 30%;
   padding: 15px;
   box-sizing: border-box;
   font-size: 0.8rem;
+}
 
+.funding-rounds-cell > .bottom > a {
+  font-size: 0.85rem;
 }
 
 .funding-rounds-cell > .bottom > .news {
   color: rgb(80, 80, 80);
-  line-height: 2rem;
+  line-height: 1.5;
 }
 
 .funding-rounds-cell > .bottom > .origin {
   color: rgb(120, 120, 120);
+}
+
+#tricolor-bottom {
+  padding-bottom: 25px;
 }
 
 .funding-rounds-cell > .logo-funding-cell {
@@ -366,6 +373,45 @@ main {
   background-color: #f42;
   position: absolute;
   margin: 8px;
+}
+
+.funding-img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .funding-rounds-cell > .bottom > a {
+    font-size: 0.7rem;
+  }
+
+  .funding-rounds-cell > .bottom {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .funding-rounds-cell > .middle > a {
+    font-size: 0.8rem;
+  }
+
+  .funding-rounds-cell > .middle {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  .section-open {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-open .right {
+    margin-top: 10px;
+  }
+
+  .section-open .right .first {
+    padding-left: 0;
+  }
 }
 
 #news-2 {
@@ -499,15 +545,55 @@ main {
 }
 
 .most-popular {
-  background-color: aliceblue;
-  height: 2000px;
+  /* height: 2000px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 
 .most-popular-cell {
-  border: 2px solid grey;
+  border: 1px solid coral;
+}
+
+.most-popular-cell .header {
+  position: absolute;
+  border: 2px solid red;
+  height: 100px;
+  width: 80%;
+  bottom: 0;
+}
+
+.most-popular-cell .section-open {
+  color: #f42;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.most-popular-cell .latest {
+  height: 96px;
+  background-color: orange;
+  display: flex;
+}
+
+.most-popular-cell .latest .left {
+  flex-grow: 3;
+}
+
+.most-popular-cell .latest .right {
+  flex-grow: 1;
+  border: 2px solid red;
+}
+
+.most-popular-cell .img-container {
+  height: 276px;
+  background-color: blue;
+  position: relative;
+}
+
+.most-popular-cell .news a {
+  display: block;
+  height: 30px;
+  border-bottom: 1px solid rgb(170, 170, 170);
 }
 
 @media screen and (max-width: 1000px) {
