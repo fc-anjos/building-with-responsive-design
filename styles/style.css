@@ -617,6 +617,27 @@ main {
   background-image: url(../resources/most-popular-img-3.jpg);
 }
 
+
+#most-popular-img-big-4 {
+  background-image: url(../resources/most-popular-4.jpg);
+}
+
+#most-popular-img-big-5 {
+  background-image: url(../resources/most-popular-5.jpg);
+}
+
+#most-popular-img-big-6 {
+  background-image: url(../resources/most-popular-6.png);
+}
+
+#most-popular-img-big-7 {
+  background-image: url(../resources/most-popular-7.jpg);
+}
+
+#most-popular-img-big-8 {
+  background-image: url(../resources/most-popular-8.png);
+}
+
 .most-popular-cell .news .news-link {
   display: block;
   color: rgb(80, 80, 80);
