@@ -531,10 +531,29 @@ main {
 
 .most-popular-cell .header {
   position: absolute;
-  border: 2px solid red;
   height: 100px;
   width: 80%;
   bottom: 0;
+  z-index: 3;
+  color: white;
+  padding: 13px;
+}
+
+.most-popular .text-by {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.most-popular .text-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.most-popular .author-1 {
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: 10px;
+
 }
 
 .most-popular-cell .section-open {
@@ -545,24 +564,40 @@ main {
 
 .most-popular-cell .latest {
   height: 96px;
-  background-color: orange;
   display: flex;
+  color: #f42;
 }
 
 .most-popular-cell .latest .left {
-  flex-grow: 3;
+  width: 75%;
+  color: #f42;
+  background-color: #ffebe7;
+  padding: 10px;
+}
+
+.most-popular-cell .latest .left p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.most-popular-cell .latest .left span {
+  text-transform: uppercase;
 }
 
 .most-popular-cell .latest .right {
-  flex-grow: 1;
-  border: 2px solid red;
+  width: 25%;
+  background-color: blue;
+  height: 100%;
 }
 
 .most-popular-cell .img-container {
-  height: 276px;
-  background-color: blue;
+  height: 250px;
   position: relative;
+  background-image: url(../resources/most-popular-image.png);
+  background-size: cover;
+  background-position: 50%;
 }
+
 
 .most-popular-cell .news a {
   display: block;
