@@ -812,23 +812,42 @@ footer > .social {
   flex-direction: column;
 }
 
-.contact-container > .contact-link {
-  display: inline-block;
-  width: 100px;
-  height: 20px;
-  background-color: aliceblue;
-}
-
-.white-header a:hover {
-  color: black;
-}
-
-footer > .social > .social-buttons-container > a {
+.social-button {
+  border-radius: 50%;
+  margin-left: 7px;
   display: inline-block;
   height: 40px;
   width: 40px;
   background-color: #333;
   z-index: 1;
+}
+
+.social-button:hover {
+  background-color: inherit;
+  height: 36px;
+  width: 36px;
+  border: 2px solid #333;
+}
+
+.contact-container {
+  margin-top: 20px;
+}
+
+.contact-container > .contact-link {
+  display: inline-block;
+  color: rgb(170, 170, 170);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.contact-container > .contact-link:hover {
+  color: white;
+}
+
+.white-header a:hover {
+  color: black;
 }
 
 footer > .social > .social-buttons-container {
