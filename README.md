@@ -1,50 +1,24 @@
-Project Name
-One paragraph statement about the project.
+# Responsive-Design
+##  Building a responsive design of the [Nextweb](https://thenextweb.com) website
 
-screenshot
+![Screenshot of the project](screenshot.png)
+### Built With
+    html
+    css (Flexbox and media queries)
 
-Additional description about the project and its features.
+### Check it online!
+[Live preview](https://raw.githack.com/fc-anjos/building-with-responsive-design/responsive-layout/index.html)
 
-Built With
-Major languages,
-frameworks,
-technologies used
-Live Demo
-Live Demo Link
+### Authors:
+##### Felipe dos Anjos
+GitHub: [@fc-anjos](https://github.com/fc-anjos)  
 
-Getting Started
-This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
+##### Julia Muriuk 
+Github: [@MotivateJ](https://github.com/motivatej) 
 
-To get a local copy up and running follow these simple example steps.
 
-Prerequisites
-Setup
-Install
-Usage
-Run tests
-Deployment
-Authors
-👤 Author1
+### Contributions and issues are welcome!
 
-Github: @githubhandle
-Twitter: @twitterhandle
-Linkedin: linkedin
-👤 Author2
 
-Github: @githubhandle
-Twitter: @twitterhandle
-Linkedin: linkedin
-🤝 Contributing
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the issues page.
-
-Show your support
-Give a ⭐️ if you like this project!
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
-📝 License
+### License
 This project is MIT licensed.
