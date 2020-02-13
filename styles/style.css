@@ -61,6 +61,15 @@ main {
   margin-right: 20px;
 }
 
+.logo {
+  position: relative;
+}
+
+.header-logo {
+  max-width: 80%;
+  height: auto;
+}
+
 @media screen and (max-width: 1200px) {
   .media1200 {
     display: none;
@@ -504,6 +513,11 @@ main {
     justify-content: center;
   }
 
+  .logo:hover {
+    background-image: url(../resources/home-1.gif);
+    background-size: cover;
+  }
+
   .white-header,
   .black-header {
     width: calc(100% - 80px);
@@ -822,20 +836,43 @@ footer > .social {
   z-index: 1;
 }
 
-.icon--facebook {
+.icons {
   display: block;
   width: 16px;
   height: 16px;
   background-image: url(../resources/icons.svg);
-  /* background-position-x: 1296px;
-  background-position-y: 1296px;
   background-size: 1296px 1296px;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: transparent; */
+  position: relative;
+  top: 12px;
+  left: 12px;
+}
+
+.twitter-icon {
+  background-position: -1024px -1024px;
+}
+
+.facebook-icon {
+  background-position: -272px -272px;
+}
+
+.youtube-icon {
+  background-position: -1280px -1280px;
+}
+
+.instagram-icon {
+  background-position: -416px -416px;
+}
+
+.pinterest-icon {
+  background-position: -672px -672px;
+}
+
+.feed-icon {
+  background-position: -816px -816px;
+}
+
+.mail-icon {
+  background-position: -576px -576px;
 }
 
 .social-button:hover {
@@ -843,6 +880,11 @@ footer > .social {
   height: 36px;
   width: 36px;
   border: 2px solid #333;
+}
+
+.social-button:hover .icons {
+  top: 10px;
+  left: 10px;
 }
 
 .contact-container {
@@ -881,14 +923,12 @@ footer > .credits {
 
 .credits-text > b {
   color: red;
-
 }
 
-.credits-tnw, 
+.credits-tnw,
 .credits-stackpath {
   height: 10px;
 }
-
 
 .contact-container {
   display: inline-block;
@@ -918,12 +958,4 @@ footer > .credits {
   background: url(../resources/cover-3.jpg);
   background-size: cover;
   background-position: 50%;
-}
-
-.test {
-  width: 100%;
-  height: 500px;
-  border: 10px solid blue;
-  background-image: url(../resources/icons.svg);
-  background-size: 1296px 1296px;
 }
