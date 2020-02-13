@@ -822,6 +822,22 @@ footer > .social {
   z-index: 1;
 }
 
+.icon--facebook {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../resources/icons.svg);
+  /* background-position-x: 1296px;
+  background-position-y: 1296px;
+  background-size: 1296px 1296px;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: transparent; */
+}
+
 .social-button:hover {
   background-color: inherit;
   height: 36px;
@@ -857,7 +873,22 @@ footer > .social > .social-buttons-container {
 footer > .credits {
   background-color: black;
   height: 30%;
+  color: #aaa;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 35px;
 }
+
+.credits-text > b {
+  color: red;
+
+}
+
+.credits-tnw, 
+.credits-stackpath {
+  height: 10px;
+}
+
 
 .contact-container {
   display: inline-block;
@@ -887,4 +918,12 @@ footer > .credits {
   background: url(../resources/cover-3.jpg);
   background-size: cover;
   background-position: 50%;
+}
+
+.test {
+  width: 100%;
+  height: 500px;
+  border: 10px solid blue;
+  background-image: url(../resources/icons.svg);
+  background-size: 1296px 1296px;
 }
