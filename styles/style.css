@@ -14,8 +14,14 @@ main {
   margin: 0 auto;
 }
 
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .square-font {
   font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 500;
 }
 
 .rounded-font {
@@ -28,9 +34,17 @@ main {
   }
 }
 
+#news-header {
+  color: white;
+}
+
+#news-header:hover {
+  color: white;
+}
+
 .black-header {
   height: 30%;
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   width: 100%;
   display: flex;
   align-items: center;
@@ -43,20 +57,22 @@ main {
   text-decoration: none;
   margin-right: 10px;
   color: #979797;
-  font-size: 0.8rem;
+}
+
+.black-header-left > *,
+.black-header-right > * {
+  font-size: 0.85rem;
+  color: #979797;
+}
+
+.black-header-right > * {
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .black-header-left > *:hover,
 .black-header-right > *:hover {
   color: white;
-}
-
-
-.black-header-right > * {
-  text-decoration: none;
-  margin-right: 10px;
-  color: #979797;
-  font-size: 0.8rem;
 }
 
 .white-header {
@@ -169,6 +185,26 @@ main {
   position: relative;
 }
 
+.clock {
+  background-position: -160px -160px;
+}
+
+.share {
+  background-position: -912px -912px;
+}
+
+.icon-inline {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  scale: 0.875;
+  background-image: url(../resources/icons.svg);
+  opacity: 0.4;
+  position: relative;
+  top: 3px;
+  margin-left: 8px;
+}
+
 .bottom-part .writer {
   font-size: 0.9rem;
   color: rgb(120, 120, 120);
@@ -177,13 +213,13 @@ main {
 .bottom-part-small {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   padding: 10px;
   box-sizing: border-box;
 }
 
 .bottom-part-small > span {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   color: white;
 }
 
@@ -203,6 +239,10 @@ main {
 
 .cover-header {
   position: relative;
+}
+
+.cover-header .rounded-font {
+  font-weight: 700;
 }
 
 .gradient {
@@ -240,6 +280,12 @@ main {
   text-decoration: none;
 }
 
+.bottom-part > a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
 .latest-cell-grey {
   font-weight: normal;
   font-size: 0.8rem;
@@ -264,7 +310,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 10px 0;
   color: #f42;
 }
 
@@ -586,7 +632,9 @@ main {
 
 .most-popular .text-message {
   font-size: 1.2rem;
-  font-weight: bold;
+  line-height: 1.15;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .most-popular .author-1 {
@@ -603,17 +651,19 @@ main {
 }
 
 .most-popular-cell .latest .left {
-  width: 75%;
   color: #f42;
   background-color: #ffebe7;
   padding: 10px 20% 10px 10px;
   box-sizing: border-box;
+  height: 96px;
+  flex-grow: 1;
 }
 
 .most-popular-cell .latest .left p {
   margin-top: 5px;
-  font-weight: bold;
-  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 0.8rem;
 }
 
 .most-popular-cell .latest .left span {
@@ -622,14 +672,13 @@ main {
 }
 
 .most-popular-cell .latest .right {
-  width: 25%;
   background-color: blue;
   height: 100%;
 }
 
 .right .img-most-popular {
-  width: 100%;
-  height: 100%;
+  width: 96px;
+  height: 96px;
   object-fit: cover;
 }
 
@@ -695,9 +744,16 @@ main {
 }
 
 .most-popular-cell .news ul li {
-  border-bottom: 1px solid rgb(170, 170, 170);
   margin: 0;
   padding: 0;
+}
+
+.line {
+  width: calc(100% + 10px);
+  height: 2px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  position: relative;
+  right: 10px;
 }
 
 .most-popular-cell .news .news-link:hover {
@@ -723,11 +779,12 @@ main {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .latest-deals-cell .img-container {
   display: block;
-  height: 75%;
+  height: 70%;
   position: relative;
 }
 
@@ -738,11 +795,11 @@ main {
   object-fit: cover;
 }
 
-.latest-deals-cell a {
+.latest-deals-cell .deal-link {
   color: black;
   font-weight: bold;
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1.3;
   display: block;
   text-decoration: none;
   margin: 5px 0 0 0;
@@ -943,7 +1000,8 @@ footer > .credits {
 }
 
 .credits-text > b {
-  color: red;
+  color: rgb(230, 30, 30);
+  font-size: 1.2em;
 }
 
 .credits-tnw,
