@@ -965,10 +965,6 @@ footer > .social {
   left: 10px;
 }
 
-.contact-container {
-  margin-top: 20px;
-}
-
 .contact-container > .contact-link {
   display: inline-block;
   color: rgb(170, 170, 170);
@@ -1011,15 +1007,12 @@ footer > .credits {
 
 .contact-container {
   display: inline-block;
+  margin-top: 20px;
 }
-
-/* HOVERS */
 
 .funding-rounds-cell > .middle > a:hover {
   color: black;
 }
-
-/* IDS */
 
 #cover-1 {
   background: url(../resources/cover-1.png);
