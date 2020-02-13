@@ -14,6 +14,14 @@ main {
   margin: 0 auto;
 }
 
+.square-font {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.rounded-font {
+  font-family: 'Poppins', sans-serif;
+}
+
 @media screen and (max-width: 1200px) {
   main {
     width: 100%;
@@ -28,10 +36,23 @@ main {
   align-items: center;
   padding-left: 20px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
-.black-header a {
-  display: inline-block;
+.black-header-left > * {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #979797;
+  font-size: 0.8rem;
+}
+
+.black-header-left > *:hover,
+.black-header-right > *:hover {
+  color: white;
+}
+
+
+.black-header-right > * {
   text-decoration: none;
   margin-right: 10px;
   color: #979797;
@@ -249,7 +270,7 @@ main {
 
 .section-open > h2 {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: black;
 }
 
 .funding-rounds-cell a {
@@ -896,7 +917,7 @@ footer > .social {
   color: rgb(170, 170, 170);
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   margin-left: 10px;
 }
 
