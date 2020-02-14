@@ -398,7 +398,6 @@ h2 {
 
 .small-open {
   color: #f42;
-  border-right: 2px solid #f42;
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
@@ -554,7 +553,7 @@ h2 {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   .latest-news {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -628,7 +627,7 @@ h2 {
   grid-gap: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   .funding-rounds {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -645,7 +644,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   .logo {
     height: 100%;
     width: 80px;
@@ -832,7 +831,7 @@ h2 {
   color: black;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   .most-popular {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -903,22 +902,23 @@ h2 {
 .right {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
-.first {
-  padding-left: 0;
+.vertical-bar {
+  height: 1rem;
+  width: 2px;
+  background-color: #f42;
 }
 
-@media screen and (max-width: 1000px) {
+
+
+@media screen and (max-width: 1020px) {
   .right {
     display: block;
     width: 100%;
     margin-top: 5px;
     font-size: 0.9rem;
-  }
-
-  .small-open {
-    border-width: 1px;
   }
 
   .section-open {
@@ -932,6 +932,16 @@ h2 {
   #section-open-latest-deals {
     display: flex;
   }
+
+  .first {
+    padding-left: 0;
+  }
+
+  .vertical-bar {
+    display: inline-block;
+    height: 0.8rem;
+    width: 1px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -940,6 +950,10 @@ h2 {
     padding: 0 0 7px 0;
     border: none;
     font-size: 0.9rem;
+  }
+
+  .vertical-bar {
+    display: none;
   }
 }
 
@@ -962,7 +976,7 @@ h2 {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   .latest-deals {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
