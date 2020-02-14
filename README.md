@@ -7,7 +7,7 @@
     css (Flexbox and media queries)
 
 ### Check it online!
-[Live preview](https://raw.githack.com/fc-anjos/building-with-responsive-design/responsive-layout/index.html)
+[Live preview](https://raw.githack.com/fc-anjos/building-with-responsive-design/master/index.html)
 
 ### Authors:
 ##### Felipe dos Anjos

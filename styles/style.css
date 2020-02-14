@@ -914,7 +914,6 @@ h2 {
 @media screen and (max-width: 1020px) {
   .right {
     display: block;
-    width: 100%;
     margin-top: 5px;
     font-size: 0.9rem;
   }
