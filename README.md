@@ -1,7 +1,7 @@
 # Responsive-Design
 ##  Building a responsive design of the [Nextweb](https://thenextweb.com) website
 
-![Screenshot of the project](screenshot.png)
+![Screenshot of the project](screenshot.PNG)
 ### Built With
     html
     css (Flexbox and media queries)

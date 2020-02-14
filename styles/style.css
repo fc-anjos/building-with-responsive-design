@@ -202,7 +202,6 @@ h2 {
 .big-news .bottom-part {
   position: absolute;
   bottom: 0;
-  width: 100%;
   padding: 20px;
 }
 
@@ -336,11 +335,12 @@ h2 {
 }
 
 .section-open {
+  margin: 20px 0 10px 0;
+  color: #f42;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0 10px 0;
-  color: #f42;
 }
 
 .section-open > h2 {
@@ -704,11 +704,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.most-popular-cell .latest .right {
-  background-color: blue;
-  height: 100%;
-}
-
 .right .img-most-popular {
   width: 96px;
   height: 96px;
@@ -859,6 +854,35 @@ h2 {
 .latest-deals-cell .price-p .new-price {
   font-size: 1rem;
   color: rgb(80, 80, 80);
+}
+
+.right {
+  display: inline;
+  align-items: center;
+}
+
+.first {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .right {
+    display: block;
+    width: 100%;
+  }
+
+  .section-open {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .small-open {
+    display: block;
+    padding: 0 0 7px 0;
+    border: none;
+    font-size: 0.9rem;
+  }
 }
 
 .discount-tag {
