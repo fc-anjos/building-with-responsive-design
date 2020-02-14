@@ -97,16 +97,15 @@ h2 {
 }
 
 .white-header-left {
-  display: block;
-  margin: auto 0;
+  display: flex;
+  align-items: center;
 }
-
 
 .white-header-right {
-  float: right;
+  display: flex;
 }
 
-.search-div {
+.search-wrapper {
   width: 50px;
   height: 100%;
   border-left: 1px solid rgb(230, 230, 230);
@@ -126,12 +125,28 @@ h2 {
 }
 
 .hamburguer-icon {
+  padding: 15px;
   width: 50px;
   height: 100%;
-  background-color: rgb(204, 0, 153);
-  float: right;
+  box-sizing: border-box;
+  display: none;
 }
 
+.hamburguer-icon .hamb-line {
+  padding: 0;
+  margin: 0;
+  margin-top: 20%;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #f42;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburguer-icon {
+    display: block;
+  }
+}
 
 .white-header-right:hover .search {
   opacity: 0.7;
@@ -321,6 +336,7 @@ h2 {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+  margin-bottom: 80px;
 }
 
 .latest-cell .bottom-part {
@@ -885,7 +901,7 @@ h2 {
 }
 
 .right {
-  display: inline;
+  display: flex;
   align-items: center;
 }
 
@@ -897,10 +913,24 @@ h2 {
   .right {
     display: block;
     width: 100%;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+
+  .small-open {
+    border-width: 1px;
   }
 
   .section-open {
     display: block;
+  }
+
+  #right-latest-deals {
+    width: auto;
+  }
+
+  #section-open-latest-deals {
+    display: flex;
   }
 }
 
@@ -1099,7 +1129,6 @@ footer > .credits {
   .credits {
     padding-bottom: 30px;
   }
-
 }
 
 .contact-container {
