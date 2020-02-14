@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  height: 106px;
+  height: 80px;
   width: 100%;
 }
 
@@ -43,7 +43,7 @@ h2 {
 }
 
 .black-header {
-  height: 30%;
+  height: 40%;
   background-color: rgb(15, 15, 15);
   width: 100%;
   display: flex;
@@ -76,14 +76,43 @@ h2 {
 }
 
 .white-header {
-  height: 70%;
-  background-color: white;
   display: flex;
-  align-items: center;
-  width: 100%;
+  justify-content: space-between;
+  height: 48px;
+  background-color: white;
   padding-left: 20px;
   font-size: 0.9rem;
   box-sizing: border-box;
+  width: 100%;
+}
+
+.white-header-left {
+  display: block;
+  margin: auto 0;
+}
+
+.white-header-right {
+  float: right;
+  width: 50px;
+  height: 100%;
+  border-left: 1px solid rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../resources/icons.svg);
+  background-size: 1296px 1296px;
+  background-position: -848px -848px;
+  opacity: 0.5;
+}
+
+.white-header-right:hover .search {
+  opacity: 0.7;
 }
 
 .white-header a {
@@ -323,7 +352,7 @@ h2 {
   text-decoration: none;
 }
 
-.section-open > .right > .small-open {
+.small-open {
   color: #f42;
   border-right: 2px solid #f42;
   padding-right: 10px;
@@ -331,8 +360,12 @@ h2 {
   text-decoration: none;
 }
 
-.section-open > div > .last {
-  border-right: none;
+.small-open:hover {
+  color: black;
+}
+
+.small-open:last-child {
+  border: none;
 }
 
 .funding-rounds-cell > .top {
