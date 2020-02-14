@@ -53,6 +53,10 @@ h2 {
   justify-content: space-between;
 }
 
+.black-header > * {
+  white-space: nowrap;
+}
+
 .black-header-left > * {
   text-decoration: none;
   margin-right: 10px;
@@ -68,6 +72,12 @@ h2 {
 .black-header-right > * {
   text-decoration: none;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 820px) {
+  .black-header-right {
+    display: none;
+  }
 }
 
 .black-header-left > *:hover,
@@ -91,8 +101,12 @@ h2 {
   margin: auto 0;
 }
 
+
 .white-header-right {
   float: right;
+}
+
+.search-div {
   width: 50px;
   height: 100%;
   border-left: 1px solid rgb(230, 230, 230);
@@ -111,6 +125,14 @@ h2 {
   opacity: 0.5;
 }
 
+.hamburguer-icon {
+  width: 50px;
+  height: 100%;
+  background-color: rgb(204, 0, 153);
+  float: right;
+}
+
+
 .white-header-right:hover .search {
   opacity: 0.7;
 }
@@ -125,6 +147,12 @@ h2 {
   display: inline-block;
   height: 20px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-link {
+    display: none;
+  }
 }
 
 .logo {
@@ -471,7 +499,7 @@ h2 {
   height: auto;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .funding-rounds-cell > .bottom > a {
     font-size: 0.7rem;
   }
@@ -517,7 +545,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .latest-news {
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: 1fr;
@@ -553,7 +581,7 @@ h2 {
   padding: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   header {
     height: 48px;
   }
@@ -594,7 +622,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .funding-rounds {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -717,7 +745,7 @@ h2 {
   background-position: 50%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .most-popular-cell .img-container {
     height: 60vh;
   }
@@ -795,7 +823,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .most-popular {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -876,7 +904,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .small-open {
     display: block;
     padding: 0 0 7px 0;
@@ -911,7 +939,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .latest-deals {
     grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(1, 1fr);
@@ -1060,6 +1088,18 @@ footer > .credits {
 .credits-tnw,
 .credits-stackpath {
   height: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .credits-text {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .credits {
+    padding-bottom: 30px;
+  }
+
 }
 
 .contact-container {
